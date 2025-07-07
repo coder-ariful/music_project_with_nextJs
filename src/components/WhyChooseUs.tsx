@@ -56,7 +56,7 @@ const content = [
 ];
 export function WhyChooseUs() {
     return (
-        <div className="w-full pb-4">
+        <div className="w-full">
             <StickyScroll content={content} />
         </div>
     );

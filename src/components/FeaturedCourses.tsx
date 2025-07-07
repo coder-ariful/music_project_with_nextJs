@@ -25,7 +25,7 @@ const FeaturedCourses = () => {
                     <h2 className='text-base text-teal-600 font-semibold tracking-wide uppercase'>Feature Course</h2>
                     <p className='mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl'>Learn with the best</p>
                 </div>
-                <div className='mt-10'>
+                <div className='mt-10 mx-20'>
                     <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center'>
                         {
                             featuredCourse.map((course) => (
