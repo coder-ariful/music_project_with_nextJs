@@ -1,5 +1,6 @@
 import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
+import MeetOurInstructors from "@/components/MeetOurInstructors";
 import MusicTestimonialCarts from "@/components/MusicTestimonialCarts";
 import UpComingWebINARS from "@/components/UpComingWebINARS";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
@@ -12,6 +13,7 @@ export default function Home() {
       <WhyChooseUs></WhyChooseUs>
       <MusicTestimonialCarts></MusicTestimonialCarts>
       <UpComingWebINARS></UpComingWebINARS>
+      <MeetOurInstructors></MeetOurInstructors>
     </main>
   );
 }
