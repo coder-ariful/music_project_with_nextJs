@@ -6,23 +6,25 @@ import { cn } from "@/utils/lib";
 
 export default function MusicTestimonialCarts() {
     return (
-
-        <div className="relative flex h-[40rem] w-full items-center justify-center bg-white dark:bg-black">
-            <div
-                className={cn(
-                    "absolute inset-0",
-                    "[background-size:40px_40px]",
-                    "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-                    "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
-                )}
-            />
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
-            <InfiniteMovingCards
-                items={testimonials}
-                direction="right"
-                speed="slow"
-            />
-        </div >
+            <div className="relative flex h-[100vh] w-full items-center justify-center bg-white dark:bg-black">
+                <div
+                    className={cn(
+                        "absolute inset-0",
+                        "[background-size:40px_40px]",
+                        "[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+                        "dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+                    )}
+                    >
+                    <h2 className="lg:text-5xl text-2xl text-center mt-32 lg:mt-36 font-bold">Hear Our Harmony: Voices of success</h2>
+                    </div>
+                <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+                <InfiniteMovingCards
+                    items={testimonials}
+                    direction="right"
+                    speed="slow"
+                    className=" mt-24"
+                />
+            </div >
     );
 }
 
