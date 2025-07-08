@@ -6,7 +6,7 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 
 const MeetOurInstructors = () => {
     return (
-        <>
+        <div className='relative flex justify-center items-center overflow-hidden'>
             <WavyBackground className="max-w-4xl mx-auto pb-30">
                 <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
                     Meet Our Instructors
@@ -15,11 +15,11 @@ const MeetOurInstructors = () => {
                     Discover the talented professionals who will guide your musical journey
                 </p>
 
-                <div className="flex flex-row items-center justify-center mt-10  w-full">
+                <div className="flex flex-row items-center justify-center mt-10 w-full">
                     <AnimatedTooltip items={people} />
                 </div>
             </WavyBackground>
-        </>
+        </div>
     );
 };
 
